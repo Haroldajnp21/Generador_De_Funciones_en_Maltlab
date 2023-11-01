@@ -26,35 +26,35 @@ title("Rampa Unitaria Discreta"); % Asigna titulo a la gráfica
 
 % GENERACION DE LA FUNCION POTENCIAL X(K)=2^K
 
-k = linspace(0, 5, 20);
-x = 2.^k;
-grid on
+k = linspace(0, 5, 20);   % la funcion linespace sirve para retomar un vector espaciado linealmente
+x = 2.^k;                 % funcion Exponencial
+grid on                   % Muestra lineas de cuadriculas principales para los ejes actuales
 
-plot(k, x, 'ro')
-xlabel('k')
-ylabel('x(k)')
-title("Potencia Discreta");
+plot(k, x, 'ro')          % Plotea y/o grafica círculos de color rojo
+xlabel('k')               % Asigna una etiqueta al eje x
+ylabel('x(k)')            % Asigna una etiqueta al eje y
+title("Potencia Discreta"); % Asigna titulo a la gráfica
 
 
 
 % GENERACION DE LA FUNCION POTENCIAL X(K)=e^(2K)
 
-k = linspace(1, 5, 20);
-x = exp(-2*k);
+k = linspace(1, 5, 20);     % la funcion linespace sirve para retomar un vector espaciado linealmente
+x = exp(-2*k);              % funcion Exponencial
 grid on
 
-plot(k, x, 'ro')
-xlabel('k')
-ylabel('x(k)')
-title("Exponencial Discreta");
+plot(k, x, 'ro')            % Plotea y/o grafica círculos de color rojo
+xlabel('k')                 % Asigna una etiqueta al eje x
+ylabel('x(k)')              % Asigna una etiqueta al eje y
+title("Exponencial Discreta"); % Asigna titulo a la gráfica
 
 % GENERACION DE LA FUNCION SENO: x(k)= sen(wkT)
 
 k = linspace(1, 20);
 x = sin(k);
-grid
+grid                        % Muestra lineas de cuadriculas principales
 
-plot(k, x, 'bo')
-xlabel('k')
-ylabel('x(k)=seno(k)')
-title("Senoidal Discreta");
+plot(k, x, 'bo')            % Plotea y/o grafica círculos de color rojo
+xlabel('k')                 % Asigna una etiqueta al eje x
+ylabel('x(k)=seno(k)')      % Asigna una etiqueta al eje y
+title("Senoidal Discreta"); % Asigna titulo a la gráfica
